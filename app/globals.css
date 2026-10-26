@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-page: #F8F7F3;
+  --text-main: #172A46;
+  --accent: #4969E8;
+  --accent-hover: #3753cf;
+  --surface-white: #FFFFFF;
+  --surface-muted: #F1EFEA;
+  --border-light: #E4E0D6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F8F7F3;
+}
+
+body {
+  background-color: #F8F7F3;
+  color: #172A46;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+/* Editorial selection */
+::selection {
+  background: #4969E8;
+  color: #FFFFFF;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #4969E8;
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
